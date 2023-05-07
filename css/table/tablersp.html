@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table  { border-collapse: separate; table-layout: fixed; border-spacing: 0; }
+  table th { background-color: teal; color: white; }
+  table, th, td { border: 1px solid black; white-space: nowrap; }
+  #bookpanel { overflow-x: auto; width: 395px; height: 107px;}
+  #booktable thead th { position: sticky; top: 0; } 
+  .sticky-head { z-index: 1; }
+  .sticky-col { position: sticky; background-color: white; }
+  table th:nth-child(1), td:nth-child(1) {width: 25px; min-width: 25px; max-width: 25px; left: 0px; }
+  table th:nth-child(2), td:nth-child(2) { width: 80px; min-width: 80px; max-width: 80px; left: 25px; }
+</style>
+</head>
+<body>
+<div id="bookpanel">
+<table id="booktable">
+  <thead>
+    <tr>
+      <th class="sticky-head">No.</th>
+      <th class="sticky-head">Book</th>
+      <th>Price</th> <th>Title</th> <th>Edition</th> <th>Author</th> <th>Publisher</th>
+    </tr>  
+  </thead>
+  <tbody>
+    <tr><td class="sticky-col">1</td><td class="sticky-col">Java</td><td>550</td><td>Effective Java</td><td>5th Edition</td><td>Joshua Bloch</td><td>O'Reilly</td></tr>  
+    <tr><td class="sticky-col">2</td><td class="sticky-col">C++</td><td>450</td><td>C++ Pocket Reference</td><td>1th Edition</td><td>Kyle Loudon</td><td>O'Reilly</td></tr>  
+    <tr><td class="sticky-col">3</td><td class="sticky-col">C#</td><td>350</td><td>Head First C#</td><td>4th Edition</td><td>Andrew Stellman</td><td>O'Reilly</td></tr>  
+    <tr><td class="sticky-col">4</td><td class="sticky-col">Python</td><td>390</td><td>Learning Python</td><td>5th Edition</td><td>Mark Lutz</td><td>O'Reilly</td></tr>  
+    <tr><td class="sticky-col">5</td><td class="sticky-col">Type Script</td><td>490</td><td>TypeScript Cookbook</td><td>1th Edition</td><td>Stefan Baumgartner</td><td>O'Reilly</td></tr>  
+  </tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div { width: 200px; }
+	.txt-left { text-align: left; color: red; }
+	.txt-center { text-align: center; color: green; text-transform: capitalize; }
+	.txt-right { text-align: right; color: blue; text-transform: uppercase; }
+	.txt-line { text-decoration: underline black dotted; }
+	.txt-shadow { text-shadow: 1px 1px blue; }
+	.txt-space { white-space: nowrap; }
+	.txt-over { overflow: hidden; text-overflow: ellipsis; }
+</style>    
+</head>
+<body>
+<div>
+    <div class="txt-left txt-line">text left under line</div>    
+    <div class="txt-center txt-decorate">text center</div>    
+    <div class="txt-right">text right</div>    
+    <div class="txt-shadow">text shadow</div>    
+    <div class="txt-space">This is simple text if it exceed width limit.</div>    
+    <div class="txt-space txt-over">This is simple text if it exceed width limit.</div>  
+</div>
+</body>
+</html>

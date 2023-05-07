@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table  { caption-side: bottom; border-collapse: collapse; width: 250px; }
+  table th { background-color: teal; color: white; }
+  table, th, td { border: 2px solid black; }
+  tbody tr:nth-child(even) { background-color: linen; }
+  tbody tr:hover { background-color: coral; }
+  tbody tr td:nth-child(2) { text-align: right; }
+  tfoot tr td { text-align: right; background-color: lightgray; }
+</style>
+</head>
+<body>
+<table>
+  <caption>Book Store</caption>
+  <thead>
+    <tr><th>Book</th><th>Price</th></tr>  
+  </thead>
+  <tbody>
+    <tr><td>Java</td><td>550</td></tr>  
+    <tr><td>C++</td><td>450</td></tr>  
+    <tr><td>C#</td><td>350</td></tr>  
+    <tr><td>Python</td><td>390</td></tr>  
+  </tbody>
+  <tfoot><tr><td>Total</td><td>1740</td></tr></tfoot>
+</table>
+</body>
+</html>

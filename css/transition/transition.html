@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div { width: 100px; height: 100px; background-color: orange; }
+	div.progress { transition: width 2s; }
+	div.progress:hover { width: 300px; }
+	div.rotate { transition: width 2s, height 2s, transform 2s; }
+	div.rotate:hover { width: 300px; height: 300px;
+		transform: rotate(180deg);
+	}
+</style>
+</head>
+<body style="padding: 10px;">
+	<div class="progress">Progress</div> <br/>
+	<div class="rotate">Rotate</div>
+</body>
+</html>

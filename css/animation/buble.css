@@ -1,0 +1,163 @@
+/* bubble */
+@keyframes animateBubble {
+    0% { margin-top: 1000px; }
+    100% { margin-top: -100%; }
+}
+
+@keyframes sideWays { 
+    0% { margin-left:0px; }
+    100% { margin-left:50px; }
+}
+
+/* ANIMATIONS */
+.x1 {
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate,  2s bg1 infinite;
+	left: -5%;
+	top: 5%;
+	transform: scale(0.6);
+}
+
+.x2 {
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate,  1s bg2 infinite;	
+	left: 5%;
+	top: 80%;
+	transform: scale(0.4);
+}
+
+.x3 {
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate,  2s bg3 infinite;
+	left: 10%;
+	top: 40%;
+	transform: scale(0.7);
+}
+
+.x4 {
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate,  1s bg4 infinite;
+	left: 20%;
+	top: 0;
+	transform: scale(0.3);
+}
+
+.x5 {
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate,  2s bg5 infinite;
+	left: 30%;
+	top: 50%;
+	transform: scale(0.5);
+}
+
+.x6 {
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate,  1s bg6 infinite;
+	left: 50%;
+	top: 0;
+	transform: scale(0.8);
+}
+
+.x7 {
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate,  1s bg7 infinite;
+	left: 65%;
+	top: 70%;
+	transform: scale(0.4);
+}
+
+.x8 {
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate,  2s bg8 infinite;
+	left: 80%;
+	top: 10%;
+	transform: scale(0.3);
+}
+
+.x9 {
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate,  1s bg9 infinite;
+	left: 90%;
+	top: 50%;
+	transform: scale(0.6);
+}
+
+.x10 {
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate,  1s bg10 infinite;
+	left: 80%;
+	top: 80%;
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+.bubble {
+	border-radius: 50%;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	width: 200px;
+    height: 200px;
+	position: absolute;
+}
+
+.bubble:after {
+    background: radial-gradient(ellipse at center,  rgba(204,153,0,0.5) 0%,rgba(204,153,0,0) 70%); 	
+	border-radius: 50%;
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	content: "";
+	width: 180px;
+    height: 180px;
+	left: 10px;
+	position: absolute;
+}
+
+@keyframes bgrandom {
+    0% { background: radial-gradient(ellipse,  rgba(204,153,0,0.5) 0%, rgba(204,153,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(247,220,175,0.5) 0%, rgba(247,220,175,0) 70%);  }
+    55% { background: radial-gradient(ellipse,  rgba(222,245,113,0.5) 0%, rgba(222,245,113,0) 70%);  }
+    80% { background: radial-gradient(ellipse,  rgba(238,108,114,0.5) 0%, rgba(238,108,114,0) 70%);  }
+    85% { background: radial-gradient(ellipse,  rgba(210,122,232,0.5) 0%, rgba(210,122,232,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(108,192,245,0.5) 0%, rgba(108,192,245,0) 70%);  }
+ }
+
+@keyframes bg1 {
+    0% { background: radial-gradient(ellipse,  rgba(255,0,0,0.3) 0%, rgba(255,0,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(255,0,0,0.5) 0%, rgba(255,0,0,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(255,0,0,0.8) 0%, rgba(255,0,0,0) 70%);  }
+}
+@keyframes bg2 {
+    0% { background: radial-gradient(ellipse,  rgba(0,255,0,0.3) 0%, rgba(0,255,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(0,255,0,0.5) 0%, rgba(0,255,0,0) 70%);  }
+    80% { background: radial-gradient(ellipse,  rgba(255,255,0,0.8) 0%, rgba(255,255,0,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(0,255,0,0.8) 0%, rgba(0,255,0,0) 70%);  }
+}
+@keyframes bg3 {
+    0% { background: radial-gradient(ellipse,  rgba(0,0,255,0.3) 0%, rgba(0,0,255,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(0,0,255,0.5) 0%, rgba(0,0,255,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(0,0,255,0.8) 0%, rgba(0,0,255,0) 70%);  }
+}
+@keyframes bg4 {
+    0% { background: radial-gradient(ellipse,  rgba(0,255,255,0.3) 0%, rgba(0,255,255,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(0,255,255,0.5) 0%, rgba(0,255,255,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(0,255,255,0.8) 0%, rgba(0,255,255,0) 70%);  }
+}
+@keyframes bg5 {
+    0% { background: radial-gradient(ellipse,  rgba(255,255,0,0.3) 0%, rgba(255,255,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(255,255,0,0.5) 0%, rgba(255,255,0,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(255,255,0,0.8) 0%, rgba(255,255,0,0) 70%);  }
+}
+@keyframes bg6 {
+    0% { background: radial-gradient(ellipse,  rgba(255,0,255,0.3) 0%, rgba(255,0,255,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(255,0,255,0.5) 0%, rgba(255,0,255,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(255,0,255,0.8) 0%, rgba(255,0,255,0) 70%);  }
+}
+@keyframes bg7 {
+    0% { background: radial-gradient(ellipse,  rgba(204,153,0,0.3) 0%, rgba(204,153,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(204,153,0,0.5) 0%, rgba(204,153,0,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(204,153,0,0.8) 0%, rgba(204,153,0,0) 70%);  }
+}
+@keyframes bg8 {
+    0% { background: radial-gradient(ellipse,  rgba(247,220,175,0.3) 0%, rgba(247,220,175,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(247,220,175,0.5) 0%, rgba(247,220,175,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(247,220,175,0.8) 0%, rgba(247,220,175,0) 70%);  }
+}
+@keyframes bg9 {
+    0% { background: radial-gradient(ellipse,  rgba(108,192,245,0.3) 0%, rgba(108,192,245,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(108,192,245,0.5) 0%, rgba(108,192,245,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(108,192,245,0.8) 0%, rgba(108,192,245,0) 70%);  }
+}
+@keyframes bg10 {
+	0% { background: radial-gradient(ellipse,  rgba(255,0,0,0.8) 0%, rgba(255,0,0,0) 70%);  }
+    50% { background: radial-gradient(ellipse,  rgba(0,255,0,0.8) 0%, rgba(0,255,0,0) 70%);  }
+    100% { background: radial-gradient(ellipse,  rgba(0,0,255,0.8) 0%, rgba(0,0,255,0) 70%);  }
+}
+  

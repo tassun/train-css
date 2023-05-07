@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.column { box-sizing: border-box; float: left; width: 25%; padding: 20px; }
+@media screen and (max-width: 992px) {
+  div.column { width: 50%; }
+}
+@media screen and (max-width: 600px) { 
+  div.column { width: 100%; }
+}
+@media print { h1 { display: none; } }
+</style>
+</head>
+<body>
+  <h1>Responsive Column Layout</h1>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2> <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2> <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2> <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2> <p>Some text..</p>
+    </div>
+  </div>  
+</body>
+</html>
